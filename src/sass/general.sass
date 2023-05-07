@@ -1,0 +1,181 @@
+//  html
+html
+    font-size: 1px
+
+//  @font-face
+
+@font-face
+    font-family: 'Grand Hotel'
+    src: url('../fonts/GrandHotel-Regular.eot')
+    src: url('../fonts/GrandHotel-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/GrandHotel-Regular.woff2') format('woff2'), url('../fonts/GrandHotel-Regular.woff') format('woff'), url('../fonts/GrandHotel-Regular.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+@font-face 
+    font-family: 'Lato'
+    src: url('../fonts/Lato-Regular.eot')
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato-Regular.woff2') format('woff2'), url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+//  Go to the zero
+body,
+ul,
+ol
+    margin: 0
+    padding: 0
+li
+    list-style: none
+a
+    text-decoration: none
+//   MIXIN background-gradient
+
+=background-gradient-red($your-red-fon)
+    background: linear-gradient(rgba(208, 43, 53, .78), rgba(204, 42, 50, 0.78)), url($your-red-fon) 
+    background-repeat: no-repeat
+    background-size: cover
+=background-gradient-white($your-white-fon)
+    background: linear-gradient(rgba(249, 249, 249, .15), rgba(242, 242, 243, .15)), url($your-white-fon)
+    background-repeat: no-repeat
+    background-size: cover
+//  header
+header
+    +background-gradient-red("../img/first-background-fon.png") 
+
+//  wrapper
+.wrapper
+    max-width: 300rem
+    padding-top: 50rem
+    position: relative
+    margin: 0 auto
+    @media screen and (min-width: 375px)
+        max-width: 350rem
+    @media screen and (min-width: 525px)
+        max-width: 500rem
+    @media screen and (min-width: 768px)
+        max-width: 560rem
+    @media screen and (min-width: 1024px)
+        max-width: 800rem
+
+//  nav
+.Hov
+    font-size: 25rem
+    color: #ffffff
+    font-weight: 400
+    padding: 0 10rem 20rem 10rem
+    transition: .5s
+    font-family: "Lato"
+    text-decoration: none
+.Hov:hover
+    text-decoration: underline
+    @media screen and (min-width: 768px)
+        border-bottom: 1px solid #fff
+        transition: 1s
+        text-decoration: none
+//  burger
+.burger
+    position: absolute
+    width: 50rem
+    height: 50rem
+    cursor: pointer
+    top: 72rem
+    right: 0
+.burger span,
+.burger:before,
+.burger:after
+    content: ""
+    position: absolute
+    width: 40rem
+    height: 7rem
+    top: 0
+    background-color: #fff
+    border-radius: 10rem
+.burger span
+    top: 15rem
+.burger:after
+    top: 30rem
+.menu
+    display: none
+    padding-top: 40rem
+    column-gap: 30rem
+    justify-content: center
+.active-burger
+    display: block
+
+// header-main-block 
+.header-main-block 
+    padding: 100rem 0 65rem 0
+h1
+    font-size: 100rem
+    color: #ffffff
+    font-weight: 400
+    font-family: "Grand Hotel"
+    @media screen and (min-width: 375px)
+        font-size: 120rem
+    @media screen and (min-width: 425px)
+        font-size: 130rem
+    @media screen and (min-width: 768px)
+        font-size: 200rem
+    @media screen and (min-width: 1024px)
+        font-size: 250rem
+.white
+    font-size: 30rem
+    color: #ffffff
+    font-weight: 400
+    font-family: "Lato"
+    padding-bottom: 65rem
+.standart
+    font-size: 25rem
+    text-transform: uppercase
+    color: #e8565e
+    font-weight: 700
+    font-family: "Lato"
+    background-color: #fff
+    border-radius: 60rem
+    border: 1px solid #fff
+    padding: 20rem 70rem
+
+// main
+section
+    padding-top: 100rem
+    +background-gradient-white("../img/second-background-fon.png")
+    
+h2 
+    font-size: 100rem
+    color: #e8565e
+    font-weight: 400
+    font-family: "Grand Hotel"
+    @media screen and (min-width: 375px)
+        font-size: 120rem
+    @media screen and (min-width: 425px)
+        font-size: 125rem
+.black
+    width: 275rem
+    font-size: 30rem
+    color: #333333
+    font-weight: 400
+    font-family: "Lato"
+    padding-bottom: 65rem
+    @media screen and (min-width: 375px)
+        width: 350rem
+    @media screen and (min-width: 425px)
+        width: 400rem
+    @media screen and (min-width: 600px)
+        width: 580rem
+    @media screen and (min-width: 768px)
+        width: 750rem
+h4 
+    font-size: 67rem
+    color: #e8565e
+    font-weight: 400
+    font-family: "Grand Hotel"
+    text-align: center
+.lowSize
+    font-size: 22rem
+    color: #333333
+    font-weight: 400
+    font-family: "Lato"
+.radius
+    border-radius: 50%
+    width: 95%

@@ -1,0 +1,41 @@
+-
+    let firstCardsInfo = {
+        PastaIceTea: {
+            img: "img/...",
+            alt: "PastaIceTea",
+            topTitleFirst: "Pasta + Ice Tea",
+            subText: [
+                "Lorem ipsum dolor sit amet, con-",
+                "sectetur adipiscing elit.",
+            ],
+            buttonPrice: "$34.00",
+        }
+        CarbonaraPasta: {
+            img: "img/...",
+            alt: "CarbonaraPasta",
+            topTitleFirst: "Carbonara & Pasta",
+            subText: [
+                "Lorem ipsum dolor sit amet, con-",
+                "sectetur adipiscing elit.",
+            ],
+            buttonPrice: "$34.00",
+        }
+        MieAyamPangsit: {
+            img: "img/...",
+            alt: "MieAyamPangsit",
+            topTitleFirst: "Mie Ayam Pangsit",
+            subText: [
+                "Lorem ipsum dolor sit amet, con-",
+                "sectetur adipiscing elit.",
+            ],
+            buttonPrice: "$34.00",
+        }
+    }
+mixin FirstCard(ThreeCards)
+    figure.CardMixin
+        figcaption.figcap
+            picture 
+                img(src=ThreeCards.img, alt=ThreeCards.alt)
+            h3 #{ThreeCards.topTitleFirst}
+            p.black #{ThreeCards.subText}
+            a(href="#").standart #{ThreeCards.buttonPrice}
