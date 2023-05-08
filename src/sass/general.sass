@@ -63,10 +63,10 @@ header
     font-size: 25rem
     color: #ffffff
     font-weight: 400
-    padding: 0 10rem 15rem 10rem
+    padding: 0 10rem 10rem 10rem
     display: inline-block
     transition: .5s
-    margin-bottom: 20rem
+    margin-bottom: 25rem
     font-family: "Lato"
     text-decoration: none
     border-bottom: 1px solid transparent
@@ -202,7 +202,11 @@ h4
     font-family: "Lato"
 .radius
     border-radius: 50%
-    width: 95%
+    width: 80%
+    @media screen and (min-width: 375px)
+        width: 70%
+    @media screen and (min-width: 425px)
+        width: 60%
     @media screen and (min-width: 768px)
         width: 35%
     @media screen and (min-width: 992px)
@@ -220,7 +224,7 @@ article
 .One-dased 
     border: 2px dashed #fff
     border-radius: 50%
-    padding: 55rem 80rem
+    padding: 60rem 60rem
     display: inline-block
     margin: 50rem 0
     @media screen and (min-width: 768px)
@@ -235,7 +239,5 @@ article
     color: #ffffff
     font-weight: 500
     font-family: "Lato"
-#io
-    padding: 60rem 60rem
 .width-fix 
-    max-width: 200rem
+    width: 185rem
