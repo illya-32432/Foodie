@@ -9,12 +9,13 @@ html(lang="en")
         title Foodie - The best restaurant with delicious food
 
     body 
-        //include components/mixin
+        include components/mixin
         header
             .wrapper
                 .logo.text-md-center
                     picture 
-                        img(src="img/logo.svg", alt="Logotype Foodie")
+                        a(href="#") 
+                            img(src="img/logo.svg", alt="Logotype Foodie")
                 .burger.d-md-none 
                     span 
                 nav
@@ -98,4 +99,13 @@ html(lang="en")
                                         img(src="img/pecsele.svg", alt="menu-pasta")
                                         h5 Pecel Lele
                                     p.black(id="more") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.
+            .OurMenuMilk 
+                .container 
+                    h2.text-center Package Menu
+                    p.black.text-center.mx-auto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+                    .PackageMenuCard 
+                        .flex-imagee
+                            +FirstCard(firstCardsInfo.PastaIceTea)
+                            +FirstCard(firstCardsInfo.CarbonaraPasta)
+                            +FirstCard(firstCardsInfo.MieAyamPangsit)
         script(src="js/script.js") 
