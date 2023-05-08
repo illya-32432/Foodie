@@ -6,11 +6,15 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/style.css")
         link(rel="shortcut icon" href="img/favicon.ico" type="image/x-icon")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet")
         title Foodie - The best restaurant with delicious food
 
     body 
         include components/mixin
         header
+            .home(id="home")
             .wrapper
                 .logo.text-md-center
                     picture 
@@ -21,20 +25,21 @@ html(lang="en")
                 nav
                     ul.menu.text-center.d-md-flex
                         li
-                            a.Hov(href="#") Home
+                            a.Hov(href="#home") Home
                         li
-                            a.Hov(href="#") Product
+                            a.Hov(href="#Popular") Popular
                         li
-                            a.Hov(href="#") Promo
+                            a.Hov(href="#OurStatistic") Our Statistic
                         li
-                            a.Hov(href="#") About
+                            a.Hov(href="#OurMenu") Our Menu
                         li
-                            a.Hov(href="#") Contact
+                            a.Hov(href="#PackageMenu") Package Menu
                 .header-main-block.text-center
                     h1.text-center Delicious
                     p.white.text-center.mx-auto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
                     a(href="#").standart Order Now
         main 
+            .Popularid(id="Popular")
             section 
                 .container 
                     h2.text-center Popular
@@ -56,6 +61,7 @@ html(lang="en")
                             h4.text-center Beef Pasta
                             p.lowSize.text-center.mx-auto Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             article 
+                .OurStatistic(id="OurStatistic")
                 .container 
                     h2.text-center.whit Our Statistic
                     p.white.text-center.mx-auto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
@@ -73,6 +79,7 @@ html(lang="en")
                                 p.text-center.sixSize 32
                                 p.text-center.fiveSize Country
             .OurMenuMilk 
+                .OurMenu(id="OurMenu")
                 .container 
                     h2.text-center Our Menu
                         p.black.text-center.mx-auto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
@@ -100,6 +107,7 @@ html(lang="en")
                                         h5 Pecel Lele
                                     p.black(id="more") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.
             .OurMenuMilk 
+                .PackageMenu(id="PackageMenu")
                 .container 
                     h2.text-center Package Menu
                     p.black.text-center.mx-auto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
@@ -119,4 +127,54 @@ html(lang="en")
                     .flex-form
                         input.red-bor(type="text" name="useremail" required="" placeholder="Your email")
                         input.but-input(type="submit", value="Subscribe")
+            footer 
+                .container.kulgym
+                    .flexDwaX 
+                        .jg
+                            .jeden-block-footer
+                                p.footerPH About Us
+                                p.lll Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim. 
+                        .gg
+                            .dwa-block-footer
+                                p.footerPAbout About
+                                nav 
+                                    ul
+                                        li
+                                            a.footAh(href="#plans") History
+                                        li
+                                            a.footAh(href="#planss") Our Team 
+                                        li
+                                            a.footAh(href="#plansssss") Brand Guidelines
+                                        li
+                                            a.footAh(href="#plansss") Terms & Condition
+                                        li
+                                            a.footAh(href="#planssss") Privacy Policy
+                        .gg
+                            .third-block-footer
+                                p.footerPAbout Services
+                                nav 
+                                    ul
+                                        li
+                                            a.footAh(href="#") How to Order
+                                        li
+                                            a.footAh(href="#") Our Product 
+                                        li
+                                            a.footAh(href="#") Order Status
+                                        li
+                                            a.footAh(href="#") Promo
+                                        li
+                                            a.footAh(href="#") Payment Method
+                        .gg
+                            .cztery-block-footer
+                                p.footerPAbout Follow
+                                nav 
+                                    ul
+                                        li
+                                            a.footAh(href="#") Facebook
+                                        li
+                                            a.footAh(href="#") Twitter 
+                                        li
+                                            a.footAh(href="#") Instagram
+                                        li
+                                            a.footAh(href="#") Whatsaap               
         script(src="js/script.js") 
