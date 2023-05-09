@@ -164,7 +164,7 @@ h1
     border: 1px solid transparent
 // main
 section
-    padding-top: 100rem
+    padding: 100rem 0
     +background-gradient-white("../img/second-background-fon.png")
 .flex
     @media screen and (min-width: 992px)
@@ -223,6 +223,7 @@ h4
 
 // article
 article
+    padding-bottom: 120rem
     +background-gradient-red("../img/third-background-fon.png")
 .OurStatistic
     padding-top: 100rem
@@ -255,10 +256,11 @@ article
 // OurMenuMilk
 .OurMenuMilk
     background-color: #eee6cc
+    padding-bottom: 50rem
 .OurMenu
-    padding-top: 100rem
+    padding-top: 170rem
 .PackageMenu
-    padding-top: 100rem
+    padding-top: 170rem
 .CardsMenu
     padding-top: 75rem
 .flex-image
@@ -385,7 +387,7 @@ h3
     font-family: "Grand Hotel"
 // Subscribe
 .Subscribe
-    padding: 80rem 0
+    padding: 80rem 0 100rem 0
     background-color: #faf5e4
 input
     width: 300rem
@@ -448,6 +450,8 @@ footer
         flex-direction: row
         flex-wrap: wrap
         column-gap: 40rem
+    @media screen and (min-width: 1250px)
+        justify-content: space-between
 .gg
     text-align: center
     @media screen and (min-width: 1213px)
